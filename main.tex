@@ -13,15 +13,24 @@
 \usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{amsthm}
- 
-
+ \usepackage{framed,color}
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
 \newtheorem{prop}{Proposition}
-
+\usepackage{courier}
 \begin{document}
 
 \maketitle
 \section{Introduction to ROS}
+Let's create a catkin workspace:
+\begin{shaded}
+\noindent\texttt{\noindent
+	\$\quad mkdir -p ~/catkin\_ws/src \quad \% create a directory\\
+	 \$\quad cd ~/catkin\_ws/src\\
+	 \$\quad catkin\_init\_workspace}	 
+\end{shaded}
 \input{sections/WhatIsROS.tex}
+
+
 %Ken
 %______________Brief intro, and also recommended version
 
