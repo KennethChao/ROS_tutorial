@@ -1,1 +1,38 @@
 \subsection{What is ROS?}
+This tutorial introduces a software platform
+called \textbf{Robot Operating System}, or \textbf{ROS}. The official description of ROS is as follows:
+\begin{displayquote}
+\textit{ROS is an open-source, meta-operating system for your robot. It provides the
+services you would expect from an operating system, including hardware abstraction,
+low-level device control, implementation of commonly-used functionality,
+message-passing between processes, and package management. It
+also provides tools and libraries for obtaining, building, writing, and running
+code across multiple computers}
+\end{displayquote}
+In general, a robot system consists of following components:
+\begin{displayquote}
+\begin{center}
+Hardware + OS + Apps
+\end{center}
+\end{displayquote}
+For users who want to focus on software (Apps) development, taking care of all the different types of communication between different components can be challenging. ROS, a flexible framework and also a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms, provides the need for various types of communication as a platform.
+\subsubsection{Brief history}
+ROS was originally developed in 2007 under the name switchyard by the Stanford Artificial Intelligence Laboratory. From 2008 until 2013, development was performed primarily at Willow Garage, a robotics research institute/incubator. In February 2013, ROS stewardship transitioned to the Open Source Robotics Foundation. Table 1 shows the list of ROS versions developed so far. ROS is officially supported on Ubuntu. The current suggested version combinations for ROS and Ubuntu are Indigo $+$ Ubuntu 14.04.5 LTS and Kinetic Kame $+$ Ubuntu 16.04.1 LTS. We use the former option as the version choice through this tutorial.
+\begin{table}
+\caption{ROS versions}
+\begin{center}
+\begin{tabular}{llr} 
+\toprule
+\cmidrule(r){1-2}
+Released Date    & Version \\
+\midrule
+August 2, 2010      & \textbf{C} Turtle    \\
+March 2, 2011          &    \textbf{D}iamondback     \\
+\vdots       & \vdots    \\
+July 22, 2014 & \textbf{I}ndigo      \\
+May 23, 2015,& \textbf{J}ade      \\
+May 23, 2016,& \textbf{K}inetic Kame      \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
