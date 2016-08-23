@@ -1,4 +1,13 @@
 \subsection{ROS system structure overview}
-
+ROS is a set of conventions and tools for building complex robot control systems.
+In a system built on ROS, the primary building block of the system is the “node”.
+A bunch of nodes working together concurrently make up a complete ROS-based
+robot control system.
+A node is a Linux process that performs some logically separable task. Nodes
+communicate by message passing using a well defined protocol. This is primarily
+intended for isolation and concurrency, but it has the neat side effect of
+providing programming language interoperability—a node written in COBOL will
+work fine (and you'll never even know) as long as it does the message passing
+correctly
 
 
